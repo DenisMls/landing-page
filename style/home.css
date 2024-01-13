@@ -168,3 +168,70 @@
   font-weight: 600;
   line-height: 150%;
 }
+
+.benefits {
+  padding: 110px 142px;
+}
+
+.benefits-title {
+  margin-left: 12px;
+  display: flex;
+  align-items: flex-end;
+  gap: 200px;
+}
+
+.benefits-title__text h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.benefits-title__text p {
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.benefits-title__link {
+  padding: 18px 24px;
+
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  text-wrap: nowrap;
+
+  transition: background 0.3s ease-in-out;
+}
+
+.benefits-title__link:hover {
+  background: #141414;
+  transition: background 0.3s ease-in-out;
+}
+
+.feedback {
+  padding: 100px 162px;
+  background-image: url(../img/feedback-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feedback__link {
+  padding: 18px 24px;
+
+  border-radius: 10px;
+  background: #703bf7;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  text-wrap: nowrap;
+}

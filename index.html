@@ -6,6 +6,11 @@
     <title>Estatein</title>
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/swiper.css" />
   </head>
   <body>
     <header class="header">
@@ -137,60 +142,128 @@
       </section>
       <section class="benefits">
         <img src="./img/stars.svg" alt="stars" />
-        <div class="bemefits-title">
-          <h2>Featured Properties</h2>
-          <p>
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Estatein. Click "View Details" for more
-            information.
-          </p>
-          <a href="#">View All Properties</a>
+        <div class="benefits-title">
+          <div class="benefits-title__text">
+            <h2>Featured Properties</h2>
+            <p>
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
+            </p>
+          </div>
+          <a class="benefits-title__link" href="#">View All Properties</a>
         </div>
-        <div class="slider"></div>
-      </section>
-      <section class="reviews">
-        <img src="./img/stars.svg" alt="stars" />
-        <div class="reviews-title">
-          <h2>What Our Clients Say</h2>
-          <p>
-            Read the success stories and heartfelt testimonials from our valued
-            clients. Discover why they chose Estatein for their real estate
-            needs.
-          </p>
-          <a href="#">View All Testimonials</a>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__item">
+                <img
+                  src="./img/swiper-slide-img-1.svg"
+                  alt="swiper img"
+                  width="432"
+                  height="318"
+                />
+                <p class="swiper-slide__item-title">Seaside Serenity Villa</p>
+                <p class="swiper-slide__item-subtitle">
+                  A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
+                  neighborhood... Read More
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__item">
+                <img
+                  src="./img/swiper-slide-img-2.svg"
+                  alt="swiper img"
+                  width="432"
+                  height="318"
+                />
+                <p class="swiper-slide__item-title">Metropolitan Haven</p>
+                <p class="swiper-slide__item-subtitle">
+                  A chic and fully-furnished 2-bedroom apartment with panoramic
+                  city views... Read More
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__item">
+                <img
+                  src="./img/swiper-slide-img-3.svg"
+                  alt="swiper img"
+                  width="432"
+                  height="318"
+                />
+                <p class="swiper-slide__item-title">Rustic Retreat Cottage</p>
+                <p class="swiper-slide__item-subtitle">
+                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                  community... Read More
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="slider"></div>
       </section>
-      <section class="faq">
+      <section class="benefits">
         <img src="./img/stars.svg" alt="stars" />
-        <div class="faq-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Find answers to common questions about Estatein's services, property
-            listings, and the real estate process. We're here to provide clarity
-            and assist you every step of the way.
-          </p>
-          <a href="#">View All FAQ’s</a>
+        <div class="benefits-title">
+          <div class="benefits-title__text">
+            <h2>Featured Properties</h2>
+            <p>
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
+            </p>
+          </div>
+          <a class="benefits-title__link" href="#">View All Properties</a>
         </div>
         <div class="slider"></div>
       </section>
       <section class="feedback">
-        <h2>Start Your Real Estate Journey Today</h2>
-        <p>
-          Your dream property is just a click away. Whether you're looking for a
-          new home, a strategic investment, or expert real estate advice,
-          Estatein is here to assist you every step of the way. Take the first
-          step towards your real estate goals and explore our available
-          properties or get in touch with our team for personalized assistance.
-        </p>
-        <a href="#">Explore Properties</a>
+        <div class="benefits-title">
+          <div class="benefits-title__text">
+            <h2>Start Your Real Estate Journey Today</h2>
+            <p>
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+          <a class="feedback__link" href="#">Explore Properties</a>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-feedback">
-        <img src="./img/logo.svg" alt="logo" />
-        <input type="text" />
+        <img src="./img/logo.svg" alt="logo" width="160" height="48" />
+        <label for="footerFeedback" style="display: none"></label>
+        <div class="footer-feedback__box">
+          <img
+            class="footer-feedback__box-mail"
+            src="./img/footer-feedback-mail.svg"
+            alt="mail"
+            width="24"
+            height="24"
+          />
+          <input
+            id="footerFeedback"
+            name="footerFeedback"
+            type="text"
+            placeholder="Enter Your Email"
+          />
+          <img
+            class="footer-feedback__box-massage"
+            src="./img/footer-feedback-massage.svg"
+            alt="massage"
+            width="28"
+            height="28"
+          />
+        </div>
       </div>
       <div class="footer-links">
         <div class="footer-links__container">
@@ -247,5 +320,16 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
